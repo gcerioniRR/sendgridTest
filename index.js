@@ -12,6 +12,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/csv', (req, res) => {
+  // CSV EXPORT
   const fields = ['id', 'name', 'email', 'year', 'fee'];
   const opts = { fields }
   const myData = [
